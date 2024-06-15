@@ -87,6 +87,7 @@ img{
 }
 
 .btn-custom{
+    color:#999999;
     background-color: #1C1C20;
     border: 2px solid #000;
     border-radius: 8px;
@@ -98,6 +99,7 @@ img{
 }
 
 .btn-custom:hover {
+    color: #000;
     background-color: #999999; /* Cor cinza escuro ao passar o mouse */
     transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
 }
