@@ -38,6 +38,3 @@ Este repositório contém o código-fonte de um site de controle de estoques de 
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
