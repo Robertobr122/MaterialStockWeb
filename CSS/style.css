@@ -1,0 +1,80 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #16161A;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+
+.title{
+    color: white;
+    position: relative;
+}
+
+.title-text {
+    margin: 47px 0 0;
+
+}
+
+.title-text h1 {
+    margin: 0;
+    padding-left: 70px;
+}
+
+img{
+    width: 60px;
+}
+    
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.retangulo-cinza{
+    background-color: #1C1C20;
+    height: 25px;
+    width: 100%
+}
+
+.retangulo-cinza-2{
+    background-color: #1C1C20;
+    height: 25px;
+    width: 100%;
+    margin: 25% 0 0;
+}
+
+
+.menu-lista{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Aplica menor espaçamento aos 5 primeiros itens */
+.menu-lista li:nth-child(-n+5) {
+    padding: 0px 0; /* Espaçamento menor para os 5 primeiros */
+}
+
+.menu-lista-final{
+    padding: 100px 0 0;
+}
+
+.menu-lista li, .menu-lista-final li {
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-lista li:hover, .menu-lista-final li:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+    filter: brightness(1.5); /* Aumenta o brilho para destacar */
+}
