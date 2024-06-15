@@ -78,3 +78,44 @@ img{
     transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
     filter: brightness(1.5); /* Aumenta o brilho para destacar */
 }
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 8% 10% 0 0;
+    
+}
+
+.btn-custom{
+    background-color: #1C1C20;
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 900;
+    margin-left: 50px;
+    padding: 10px 20px;
+}
+
+.btn-custom:hover {
+    background-color: #999999; /* Cor cinza escuro ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+.info-vendas {
+    background-color: #16161A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 20px 20px 0 270px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-vendas p {
+    margin: 5px 0;
+}
+
+
+
+
