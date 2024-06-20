@@ -29,13 +29,13 @@ body {
   }
   
   li a.active {
-    background-color: #fffffe;
-    color: white;
+    background-color: #16161a5d;
+    color: #fffffe;
   }
   
   li a:hover:not(.active) {
     background-color: #7f5af0;
-    color: white;
+    color: #fffffe;
     transform: scale(1.1); 
    
   }
@@ -58,8 +58,9 @@ a:hover,a:focus {
     
 }
 .iconeMain{
-    width:  50px;
-    height: 50px;
+    width:  80px;
+    height: 80px;
+    padding-left: 20px;
 }
 
 
