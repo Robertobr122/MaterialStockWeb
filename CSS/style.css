@@ -1,84 +1,118 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-    background-color: #16161A;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #16161A;
     height: auto;
     width: auto;
-}
-
-.title{
-    color: white;
-    position: relative;
-}
-
-.title-text {
-    margin: 47px 0 0;
-
-}
-
-.title-text h1 {
+    color: #fffffe;
+  }
+  
+  ul {
+    list-style-type: none;
     margin: 0;
-    padding-left: 70px;
-}
+    padding: 0;
+    width: 8%;
+    background-color:#010101;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #010101;
+    padding: 8px 16px;
+    text-decoration: none;
+    -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+  }
+  
+  li a.active {
+    background-color: #16161a5d;
+    color: #fffffe;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #7f5af0;
+    color: #fffffe;
+    transform: scale(1.1); 
+   
+  }
 
-img{
-    width: 60px;
+.no-touch .scrollable.hover {
+    overflow-y:hidden;
 }
     
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+.no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+}
+    
+a:hover,a:focus {
+    text-decoration:none;
+}
+  
+.sub-menu{
+    position: relative;
+    
+}
+.iconeMain{
+    width:  80px;
+    height: 80px;
+    padding-left: 20px;
+}
+
+
+.iconeLeftNavbar {
     width: 45px;
+    height: 45px;
+}
+
+.nav-text {
+    position: fixed;
+    vertical-align:middle;
+    width:20px;   
+}
+  
+.conteudoPrincipal {
+    margin-left: 20%;  /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
+    padding: 1px 16px;
     height: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+    box-sizing: border-box;
 }
-
-.retangulo-cinza{
-    background-color: #1C1C20;
-    height: 25px;
-    width: 100%
+.botoesIndex{ /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+  margin-left: 50%;
+  padding-top: 5%;
+  padding-left: 15%;
 }
-
-.retangulo-cinza-2{
-    background-color: #1C1C20;
-    height: 25px;
-    width: 100%;
-    margin: 25% 0 0;
+.botoesPrecos{
+  margin-left: 50%; /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+  padding-top: 5%;
+  padding-left: 15%;
 }
-
-
-.menu-lista{
-    list-style-type: none;
-    padding: 0;
+.botoesNF{
+    margin-left: 20%; /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    margin-top: -3%;
+    padding-left: 10%;
 }
-
-/* Aplica menor espaçamento aos 5 primeiros itens */
-.menu-lista li:nth-child(-n+5) {
-    padding: 0px 0; /* Espaçamento menor para os 5 primeiros */
+.tituloPage{
+   /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    padding-top: -10%;
+    padding-left: 5%;
+    margin-left: -20%;
 }
+span{transition:500ms;}
+li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; left:0; height:1px; width:20px; padding:12% 58px;}
+    li a{position:relative; width:90%;}
+     li a:hover span{transform:translatex(0%);}
 
-.menu-lista-final{
-    padding: 100px 0 0;
-}
-
-.menu-lista li, .menu-lista-final li {
-    margin: 0 10px;
-    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-}
-
-.menu-lista li:hover, .menu-lista-final li:hover {
-    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
-    filter: brightness(1.5); /* Aumenta o brilho para destacar */
-}
-
+     .retangulo-cinza{
+      background-color: #1C1C20;
+      height: 25px;
+      width: 100%
+  }
+  
 .btn{
     display: flex;
     justify-content: flex-end;
@@ -111,7 +145,7 @@ img{
     border-radius: 40px;
     border: 1px solid #ccc;
     width: 300px;
-    margin: 3% 0 0 66.5%;
+    margin: 5% 0 0 66.5%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -141,14 +175,14 @@ img{
 
 .modal {
     display: none; /* Esconde o modal por padrão */
-    position: fixed;
+    position: relative;
     z-index: 1001; /* Sobrepõe outros elementos */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0,0,0,0.4); /* Cor de fundo com transparência */
     padding-top: 60px;
 }
@@ -159,6 +193,11 @@ img{
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Largura do modal */
+}
+.retangulo-cinza{
+  background-color: #1C1C20;
+  height: 25px;
+  width: 100%
 }
 
 .close {
@@ -174,8 +213,3 @@ img{
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-

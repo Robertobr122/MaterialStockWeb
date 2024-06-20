@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="icon" href="/svg/Icon.png" type="image/x-icon">
-    <title>Página Inicial</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="svg/Icon.png" type="image/x-icon">
+    <title>Produtos</title>
 </head>
-<body>
-    <div class="title">
-        <div class = "title-text">
-            <h1>Página Inicial</h1>
-        </div>
-    </div>
+<header>
+    <ul>
+        <li class="sub-menu">
+            <a href="#"><img class="iconeMain" src="svg/Controle fácil.png" alt="início">
+            </a>
+        </li>
+        <li  class="sub-menu">
+            <a class="active" href="Index.html"><img class="iconeLeftNavbar" src="svg/Casa.png" alt="Início">
+                <span class="nav-text">Inicio</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Produtos.html"><img class="iconeLeftNavbar" src="svg/Caminhao.png" alt="Produtos">
+                <span class="nav-text">Produtos</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Relatorio.html"><img class="iconeLeftNavbar" src="svg/Grafico.png" alt="Relatórios">
+                <span class="nav-text">Relatórios</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="NotasFiscais.html"><img class="iconeLeftNavbar" src="svg/nota.png" alt="Notas Fiscais">
+                <span class="nav-text">Notas(NF)</span>
+            </a>
+        </li>
+    </ul>   
+</header>
 
-    <div class = "retangulo-cinza"> </div>
+    <body>
+        <div class="botoesIndex" class="btn">
+        <button class = "btn-custom" id="btnNovaVenda">Lançar nova venda</button>
+        <button class = "btn-custom">Editar Meta</button>
+        </div> 
+   
     
-    <nav class="menu" id="menuIcon">
-        <ul class = "menu-lista">
-            <li><a href="#"> <img src="/svg/Controle fácil.png" alt="início"></a></li>
-            <li><a href="http://127.0.0.1:5500/Index.html"><img src="/svg/Casa.png" alt=""></a></li>
-            <li><a href="http://127.0.0.1:5500/Produtos.html"><img src="/svg/Caminhao.png" alt=""></a></li>
-            <li><a href="http://127.0.0.1:5500/Relat%C3%B3rio.html"><img src="/svg/Grafico.png" alt=""></a></li>
-            <li><a href="http://127.0.0.1:5500/NotasFiscais.html"><img src="/svg/nota.png" alt=""></a></li>
-            
-            <div class="menu-lista-final">
-            <li><a href="#"></a><img src="/svg/som.png" alt=""></li>
-            <li><a href="#"></a><img src="/svg/Engrenagem.png" alt=""></li>
-            </div>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="btn">
-            <button class = "btn-custom" id="btnNovaVenda">Lançar nova venda</button>
-            <button class = "btn-custom">Editar Meta</button>
-        </div>
 
         <div class="info-vendas">
             <p class="titulo-do-circulo">Valor total vendido no dia: </p>
             <p class ="valor-do-circulo"><span id="valorTotal">R$0,00</span></p>
             <span id="totalVendas">0</span><p class="total-de-vendas">vendas</p>
         </div>
-
-    </header>
-
+<body >
     <div id="modalNovaVenda" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -66,7 +71,7 @@
             </form>
         </div>
     </div>
-
+</body>
 
     <div class = "retangulo-cinza-2"> </div>
 
