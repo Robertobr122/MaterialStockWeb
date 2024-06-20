@@ -91,7 +91,17 @@ a:hover,a:focus {
   padding-top: 5%;
   padding-left: 15%;
 }
-
+.botoesNF{
+    margin-left: 20%; /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    margin-top: -3%;
+    padding-left: 10%;
+}
+.tituloPage{
+   /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    padding-top: -10%;
+    padding-left: 5%;
+    margin-left: -20%;
+}
 span{transition:500ms;}
 li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; left:0; height:1px; width:20px; padding:12% 58px;}
     li a{position:relative; width:90%;}
