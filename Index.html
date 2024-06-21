@@ -7,7 +7,7 @@
     <link rel="icon" href="svg/Icon.png" type="image/x-icon">
     <title>Produtos</title>
 </head>
-<header>
+<header class="navbar">
     <ul>
         <li class="sub-menu">
             <a href="#"><img class="iconeMain" src="svg/Controle fácil.png" alt="início">
@@ -35,26 +35,23 @@
         </li>
     </ul>   
 </header>
-
-    <body>
+<body>
         <div class="botoesIndex" class="btn">
         <button class = "btn-custom" id="btnNovaVenda">Lançar nova venda</button>
         <button class = "btn-custom">Editar Meta</button>
         </div> 
-   
-    
 
         <div class="info-vendas">
             <p class="titulo-do-circulo">Valor total vendido no dia: </p>
             <p class ="valor-do-circulo"><span id="valorTotal">R$0,00</span></p>
             <span id="totalVendas">0</span><p class="total-de-vendas">vendas</p>
         </div>
-<body >
-    <div id="modalNovaVenda" class="modal">
-        <div class="modal-content">
+
+    <div id="modalNovaVenda" class="modal" >
+        <div class="modal-content" >
             <span class="close">&times;</span>
             <h2>Lançar nova venda</h2>
-            <form id="formNovaVenda">
+            <form  id="formNovaVenda" >
                 <label for="valorVenda">Valor:</label>
                 <input type="number" id="valorVenda" name="valorVenda" required>
                 <br>
@@ -71,13 +68,11 @@
             </form>
         </div>
     </div>
-</body>
-
-    <div class = "retangulo-cinza-2"> </div>
+  <div class = "retangulo-cinza-2"> </div>
 
 
-
-
+  
 <script src="/JAVASCRIPT/index.js"></script>
 </body>
+]
 </html>

@@ -7,7 +7,7 @@ body {
     color: #fffffe;
   }
   
-  ul {
+.navbar ul  {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,22 +18,24 @@ body {
     overflow: auto;
   }
   
-  li a {
+.navbar li a {
     display: block;
     color: #010101;
     padding: 8px 16px;
     text-decoration: none;
-    -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transform: translateZ(0) scale(1,1);
+    transform: translateZ(0) scale(1,1) ;
     -webkit-transition:all .1s linear;
     transition:all .1s linear;
+    
   }
   
-  li a.active {
-    background-color: #16161a5d;
+.navbar  li a.active {
+    background-color: #28282985;
     color: #fffffe;
   }
   
-  li a:hover:not(.active) {
+.navbar  li a:hover:not(.active) {
     background-color: #7f5af0;
     color: #fffffe;
     transform: scale(1.1); 
@@ -49,22 +51,22 @@ body {
     overflow:visible;
 }
     
-a:hover,a:focus {
+.navbar a:hover,a:focus {
     text-decoration:none;
 }
   
-.sub-menu{
+.navbar .sub-menu{
     position: relative;
     
 }
-.iconeMain{
+.navbar .iconeMain{
     width:  80px;
     height: 80px;
     padding-left: 20px;
 }
 
 
-.iconeLeftNavbar {
+.navbar .iconeLeftNavbar {
     width: 45px;
     height: 45px;
 }
@@ -76,7 +78,7 @@ a:hover,a:focus {
 }
   
 .conteudoPrincipal {
-    margin-left: 20%;  /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
+    margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
     padding: 1px 16px;
     height: 100%;
     box-sizing: border-box;
@@ -87,21 +89,28 @@ a:hover,a:focus {
   padding-left: 15%;
 }
 .botoesPrecos{
-  margin-left: 50%; /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
-  padding-top: 5%;
+  margin-left: 50%; /*Essa classe controla as posções dos botões de Preços NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
   padding-left: 15%;
+  margin-top: -4%;
+  
 }
 .botoesNF{
-    margin-left: 20%; /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    margin-left: 20%; /*Essa classe controla as posções dos botões de NotasFiscais NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
     margin-top: -3%;
     padding-left: 10%;
 }
-.tituloPage{
-   /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
-    padding-top: -10%;
-    padding-left: 5%;
-    margin-left: -20%;
+.botoesProduto{
+    padding-top: 600px;
+    overflow: hidden;
+    padding-left: 500px;
+    text-decoration:none;
 }
+
+.tituloPage{
+    padding-top: -10%;
+    padding-left: -70%; 
+}
+
 span{transition:500ms;}
 li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; left:0; height:1px; width:20px; padding:12% 58px;}
     li a{position:relative; width:90%;}
@@ -117,6 +126,7 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     display: flex;
     justify-content: flex-end;
     margin: 8% 10% 0 0;
+
     
 }
 
@@ -130,6 +140,7 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     font-weight: 900;
     margin-left: 50px;
     padding: 10px 20px;
+    
 }
 
 .btn-custom:hover {
@@ -175,7 +186,7 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
 
 .modal {
     display: none; /* Esconde o modal por padrão */
-    position: relative;
+    position: fixed;
     z-index: 1001; /* Sobrepõe outros elementos */
     left: 0;
     top: 0;
@@ -213,3 +224,37 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     text-decoration: none;
     cursor: pointer;
 }
+
+.navegacaoProdutos ul {
+ list-style-type: none;
+ padding-left: 500px;
+ margin-top: 60px;
+ overflow: hidden;
+}
+.navegacaoProdutos a{
+    color:#fefefe;
+    text-decoration: none;
+    padding: 20px 20px;
+    text-align: center;
+    
+    
+}
+.navegacaoProdutos li{
+    float:left;
+    color:#999999;
+    background-color: #1C1C20;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+    padding: 15px 20px;
+   
+}
+.navegacaoProdutos li a:hover:not(.active) {
+    color: #7f5af0;
+}
+.navegacaoProdutos li a.active {
+    background-color: #28282985;
+    color: #fffffe;
+  }
