@@ -40,16 +40,8 @@ body {
     color: #fffffe;
     transform: scale(1.1); 
    
-  }
+}
 
-.no-touch .scrollable.hover {
-    overflow-y:hidden;
-}
-    
-.no-touch .scrollable.hover:hover {
-    overflow-y:auto;
-    overflow:visible;
-}
     
 .navbar a:hover,a:focus {
     text-decoration:none;
@@ -76,7 +68,28 @@ body {
     vertical-align:middle;
     width:20px;   
 }
-  
+li a .animated-span {
+    transform: translatex(-800%);
+    color: #fffffe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 20px;
+    padding: 12% 58px;
+}
+
+li a {
+    position: relative;
+    width: 90%;
+}
+
+li a:hover .animated-span {
+    transform: translatex(0%);
+}
+span {
+    transition: 500ms;
+} 
 .conteudoPrincipal {
     margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
     padding: 1px 16px;
@@ -91,7 +104,7 @@ body {
 .botoesPrecos{
   margin-left: 50%; /*Essa classe controla as posções dos botões de Preços NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
   padding-left: 15%;
-  margin-top: -4%;
+  margin-top: -3%;
   
 }
 .botoesNF{
@@ -99,35 +112,23 @@ body {
     margin-top: -3%;
     padding-left: 10%;
 }
-.botoesProduto{
-    padding-top: 600px;
-    overflow: hidden;
-    padding-left: 500px;
-    text-decoration:none;
-}
-
 .tituloPage{
     padding-top: -10%;
     padding-left: -70%; 
 }
 
-span{transition:500ms;}
-li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; left:0; height:1px; width:20px; padding:12% 58px;}
-    li a{position:relative; width:90%;}
-     li a:hover span{transform:translatex(0%);}
 
-     .retangulo-cinza{
-      background-color: #1C1C20;
-      height: 25px;
-      width: 100%
-  }
+
+.retangulo-cinza{
+    background-color: #1C1C20;
+    height: 25px;
+    width: 100%
+}
   
 .btn{
     display: flex;
     justify-content: flex-end;
     margin: 8% 10% 0 0;
-
-    
 }
 
 .btn-custom{
@@ -140,6 +141,7 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     font-weight: 900;
     margin-left: 50px;
     padding: 10px 20px;
+    text-decoration: none;
     
 }
 
@@ -225,10 +227,52 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     cursor: pointer;
 }
 
+.navegacaoProdutosMain{
+    padding-left: 450px;
+    margin-top: 35px;
+}
+
+.navegacaoProdutosMain a{
+    color:#fefefe;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+}
+.navegacaoProdutosMain li{
+    float:inline-start;
+    color:#999999;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px 20px;
+    overflow: hidden;    
+          
+}
+.IconeProdutosMain{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -40px;
+    -webkit-filter: invert(50%);
+    filter: invert(50%);  
+    padding-right: 5px;  
+}
+.navegacaoProdutosMain a img:hover{
+    -webkit-filter:invert(33%) sepia(86%) saturate(2237%) hue-rotate(238deg) brightness(99%) contrast(91%);
+    filter:invert(33%) sepia(86%) saturate(2237%) hue-rotate(238deg) brightness(99%) contrast(91%);
+}
+
+.navegacaoProdutosMain li a:hover:not(.active) {
+    color:  #7f5af0;   
+}
+.navegacaoProdutosMain li a.active {
+    color: #fffffe;     
+}
 .navegacaoProdutos ul {
  list-style-type: none;
  padding-left: 500px;
- margin-top: 60px;
+ margin-top: 50px;
  overflow: hidden;
 }
 .navegacaoProdutos a{
@@ -236,8 +280,7 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     text-decoration: none;
     padding: 20px 20px;
     text-align: center;
-    
-    
+       
 }
 .navegacaoProdutos li{
     float:left;
@@ -246,15 +289,48 @@ li a span{transform:translatex(-800%); color:#fffffe; position:absolute; top:0; 
     border: 1px solid #000;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s;
-   
+    transition: background-color 0.3s; 
     padding: 15px 20px;
    
 }
 .navegacaoProdutos li a:hover:not(.active) {
     color: #7f5af0;
+  
+  
 }
 .navegacaoProdutos li a.active {
     background-color: #28282985;
     color: #fffffe;
-  }
+}
+.botoesProduto{
+    padding-top: 660px;
+    margin-left: 20%;
+    margin-right: 14%;
+
+}
+.btnCprodutos{
+    color:#999999;
+    background-color: #1C1C20;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 900;
+    padding: 10px 15px;
+    text-decoration: none;
+  
+}
+.btnCProdutos1, .btnCProdutos2 {
+    display: block;
+}
+.btnCProdutos1{
+    float: left;  
+}
+.btnCProdutos2{
+    float: right;     
+}
+.btnCprodutos:hover {
+    color: #000;
+    background-color: #999999; 
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+}
