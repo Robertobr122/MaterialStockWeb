@@ -228,12 +228,10 @@ span {
 }
 
 .navegacaoProdutosMain{
-    width: 100%;
-}
-.navegacaoProdutosMain ul {
-    padding-left: 500px;
+    padding-left: 450px;
     margin-top: 35px;
 }
+
 .navegacaoProdutosMain a{
     color:#fefefe;
     text-decoration: none;
@@ -266,8 +264,7 @@ span {
 }
 
 .navegacaoProdutosMain li a:hover:not(.active) {
-    color:  #7f5af0;
-    
+    color:  #7f5af0;   
 }
 .navegacaoProdutosMain li a.active {
     color: #fffffe;     
