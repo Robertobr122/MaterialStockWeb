@@ -6,7 +6,7 @@ body {
     width: auto;
     color: #fffffe;
   }
-  
+/*↓↓↓Barra de Navegação↓↓↓*/
 .navbar ul  {
     list-style-type: none;
     margin: 0;
@@ -90,10 +90,10 @@ li a:hover .animated-span {
 span {
     transition: 500ms;
 } 
+/*↓↓↓Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
 .conteudoPrincipal {
     margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
     padding: 1px 16px;
-    height: 100%;
     box-sizing: border-box;
 }
 .botoesIndex{ /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
@@ -118,7 +118,7 @@ span {
 }
 
 
-
+/*↓↓↓Index.html e aparência dos Botões↓↓↓*/
 .retangulo-cinza{
     background-color: #1C1C20;
     height: 25px;
@@ -205,7 +205,7 @@ span {
     text-decoration: none;
     cursor: pointer;
 }
-
+/*↓↓↓Produtos.html↓↓↓*/
 .navegacaoProdutosMain{
     padding-left: 450px;
     margin-top: 35px;
@@ -248,6 +248,7 @@ span {
 .navegacaoProdutosMain li a.active {
     color: #fffffe;     
 }
+/*↓↓↓CadastroProdutos.html↓↓↓*/
 .navegacaoProdutos ul {
  list-style-type: none;
  padding-left: 500px;
@@ -281,8 +282,29 @@ span {
     background-color: #28282985;
     color: #fffffe;
 }
+[type="preencher-produtos"] {
+    padding: 12px;
+    border-radius: 5px;
+    width: 400px;
+    border: 1px solid #1C1C20;
+    background-color: #1C1C20;
+    color: #fffffe;
+    margin-left: 300px;
+    padding: 20px;
+}
+[type="label-cadastro"]{
+    display:flex;
+    flex-direction:column;
+    margin-left: 300px;
+    padding: 20px;
+}
+.direcao-preencherProdutos{
+    margin-left: 600px;  
+    margin-top:-350px;
+}
+
 .botoesProduto{
-    padding-top: 660px;
+    padding-top: 400px;
     margin-left: 20%;
     margin-right: 14%;
 
