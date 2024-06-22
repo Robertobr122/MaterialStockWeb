@@ -136,7 +136,7 @@ span {
     font-family: "Lalezar", system-ui;;
     color:#94a1b2;
 =======
-    color:#999999;
+    color:#94a1b2;
 >>>>>>> parent of aa8cca0 (Atualizando Pagina NF)
     background-color: #1C1C20;
     border: 2px solid #000;
@@ -152,12 +152,12 @@ span {
 
 .btn-custom:hover {
     color: #000;
-    background-color: #999999; /* Cor cinza escuro ao passar o mouse */
+    background-color: #94a1b2; /* Cor cinza escuro ao passar o mouse */
     transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
 }
 
 .info-vendas {
-    color:#999999;
+    color:#94a1b2;
     background-color: #16161A;
     padding: 20px;
     border-radius: 40px;
@@ -224,7 +224,7 @@ span {
 }
 .navegacaoProdutosMain li{
     float:inline-start;
-    color:#999999;
+    color:#94a1b2;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -269,7 +269,7 @@ span {
 }
 .navegacaoProdutos li{
     float:left;
-    color:#999999;
+    color:#94a1b2;
     background-color: #1C1C20;
     border: 1px solid #000;
     border-radius: 3px;
@@ -315,7 +315,7 @@ span {
 
 }
 .btnCprodutos{
-    color:#999999;
+    color:#94a1b2;
     background-color: #1C1C20;
     border: 2px solid #000;
     border-radius: 10px;
@@ -337,6 +337,55 @@ span {
 }
 .btnCprodutos:hover {
     color: #000;
-    background-color: #999999; 
+    background-color: #94a1b2; 
     transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
 }
+/*↓↓↓notasFiscais.html↓↓↓*/
+.Espacamento{
+    margin-right: 250px;
+}
+.barraDeDetalhamentos ul {
+    list-style-type: none;
+    padding-left: 70px;
+    margin-left: 8% ;
+    padding-top: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 80%;
+   }
+   .barraDeDetalhamentos a{
+       color:#94a1b2;
+       text-decoration: none;
+       padding: 20px 20px;
+       text-align: center;
+
+   }
+   .barraDeDetalhamentos li{
+       float:left;
+       color:#999999;
+       background-color: #1C1C20;
+       cursor: pointer;
+       transition: background-color 0.3s; 
+       padding: 15px 20px;
+    }
+    .infoNotasFiscais {
+        margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
+        padding: 1px 16px;
+        box-sizing: border-box;
+        padding-top: 50px;
+
+    }
+    .infoNotasFiscais {
+        padding-left: 50px;
+
+    }
+    .tituloResultadoNF {
+        color: #94a1b2;
+    }
+    .resultadoNF {
+        color: #2cb67d;
+    }
+    .direcaoResultadoNf {
+        margin-left: 1200px; 
+        margin-top: -180px;
+    }
