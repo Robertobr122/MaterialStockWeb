@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Lalezar", system-ui;;
     background-color: #16161A;
     height: auto;
     width: auto;
@@ -132,13 +132,14 @@ span {
 }
 
 .btn-custom{
+    font-family: "Lalezar", system-ui;;
     color:#94a1b2;
     background-color: #1C1C20;
     border: 2px solid #000;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
     font-weight: 900;
+    transition: background-color 0.3s;
     margin-left: 50px;
     padding: 10px 20px;
     text-decoration: none;
