@@ -309,11 +309,15 @@ span {
     margin-left: 600px;  
     margin-top:-350px;
 }
+
+.reduzirDistancia{
+    margin-bottom: -112px;
+}
 .esconder{
 display: none;
 }
 .botoesProduto{
-    padding-top: 400px;
+    padding-top: 300px;
     margin-left: 20%;
     margin-right: 14%;
 

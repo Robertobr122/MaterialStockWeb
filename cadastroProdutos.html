@@ -91,29 +91,21 @@
         </div>
     </form>
     <form id="valores" class="esconder">
-        <div>
+        <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Valor de Custo</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="ValorCusto" placeholder="0.00" required>
-        </div>
-        <div>
             <label class="label-cadastro" for="NomeProduto">Margin de Lucro</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="MargeLucro" placeholder="%" required>
-        </div>
-        <div>
             <label class="label-cadastro" for="NomeProduto" >Valor de Venda</label>
             <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="lucro" placeholder="0.00" required>
         </div>
     </form>
     <form id="Estoque" class="esconder">
-        <div>
+        <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Estoque Disponível</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueDisponível" placeholder="Ex:5" required>
-        </div>
-        <div>
             <label class="label-cadastro" for="NomeProduto">Estoque Mínimo</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueMínimo" placeholder="Ex:10" required>
-        </div>
-        <div>
             <label class="label-cadastro" for="NomeProduto" >Estoque Máximo</label>
             <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="EstoqueMáximo" placeholder="Ex:100" required>
         </div>
@@ -144,7 +136,7 @@
             <input type="number" class="preencher-produtos" id="NomeProduto" name="Largura" placeholder="Cm" required>
         </div>
     </form>
-    <form id="DadosFiscais" class="esconder">
+    <form id="DadosFiscais" class="esconder reduzirDistancia">
         <div>   
             <label class="label-cadastro" for="NomeProduto">NCM</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="NCM" placeholder="Ex:5" required>
