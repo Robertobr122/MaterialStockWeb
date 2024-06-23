@@ -1,3 +1,6 @@
+html {
+    color-scheme: dark !important;
+}
 body {
     margin: 0;
     font-family: "Lalezar", system-ui;;
@@ -119,7 +122,7 @@ li a:hover .animated-span {
 span {
     transition: 500ms;
 } 
-/*↓↓↓Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
+/*↓↓↓Posição dos Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
 .conteudoPrincipal {
     margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
     padding: 1px 16px;
@@ -278,6 +281,27 @@ span {
 .navegacaoProdutosMain li a.active {
     color: #fffffe;     
 }
+.totalizantes{
+    padding-top: 40px;
+    margin-left: -14%;
+    margin-right: -80px;
+       
+}
+.titulosResultados{
+    color:#94a1b2;
+}
+.resultadosProd{
+    color: #2cb67d;
+}
+.titulosResultados, .resultadosProd {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+}
+.tituloResultadoProd, .resultadoProd {
+    margin: 0 10px;
+}
 /*↓↓↓CadastroProdutos.html↓↓↓*/
 .navegacaoProdutos ul {
  list-style-type: none;
@@ -312,7 +336,7 @@ span {
     background-color: #28282985;
     color: #fffffe;
 }
-[type="preencher-produtos"] {
+.preencher-produtos{
     padding: 12px;
     border-radius: 5px;
     width: 400px;
@@ -322,19 +346,28 @@ span {
     margin-left: 300px;
     padding: 20px;
 }
-[type="label-cadastro"]{
+.label-cadastro{
     display:flex;
     flex-direction:column;
     margin-left: 300px;
     padding: 20px;
 }
+.preencher-produtos:focus{
+    outline: 2px solid #7f5af0;
+  }
 .direcao-preencherProdutos{
     margin-left: 600px;  
     margin-top:-350px;
 }
 
+.reduzirDistancia{
+    margin-bottom: -112px;
+}
+.esconder{
+display: none;
+}
 .botoesProduto{
-    padding-top: 400px;
+    padding-top: 300px;
     margin-left: 20%;
     margin-right: 14%;
 
@@ -365,6 +398,69 @@ span {
     background-color: #94a1b2; 
     transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
 }
+
+.imagemConfig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    min-width: 800px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-bottom: -240px;
+}
+.drag-area{
+    border: 2px dashed #7f5af0;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-area .tamanho{
+    width: 100px;
+    height: 100px;
+ }
+.drag-area.active{
+    border: 3px solid #7f5af0;
+}
+.drag-area .icon{
+    font-size: 100px;
+    color: #94a1b2;
+}
+.drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #94a1b2;
+ }
+.drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #94a1b2;
+    margin: 10px 0 15px 0;
+}
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #1C1C20;
+    color: #94a1b2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+  
+
+
 /*↓↓↓notasFiscais.html↓↓↓*/
 .Espacamento{
     margin-right: 250px;
@@ -398,7 +494,7 @@ span {
         padding: 1px 16px;
         box-sizing: border-box;
         padding-top: 50px;
-
+        padding-left: 50px;
     }
     .infoNotasFiscais {
         padding-left: 50px;
@@ -413,4 +509,10 @@ span {
     .direcaoResultadoNf {
         margin-left: 1200px; 
         margin-top: -180px;
+    }
+    .botoesProduto-nf{
+        padding-top: 400px;
+        margin-left: 20%;
+        margin-right: 14%;
+    
     }
