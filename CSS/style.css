@@ -1,3 +1,6 @@
+html {
+    color-scheme: dark !important;
+}
 body {
     margin: 0;
     font-family: "Lalezar", system-ui;;
@@ -90,7 +93,7 @@ li a:hover .animated-span {
 span {
     transition: 500ms;
 } 
-/*↓↓↓Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
+/*↓↓↓Posição dos Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
 .conteudoPrincipal {
     margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
     padding: 1px 16px;
@@ -283,7 +286,7 @@ span {
     background-color: #28282985;
     color: #fffffe;
 }
-[type="preencher-produtos"] {
+.preencher-produtos{
     padding: 12px;
     border-radius: 5px;
     width: 400px;
@@ -293,17 +296,22 @@ span {
     margin-left: 300px;
     padding: 20px;
 }
-[type="label-cadastro"]{
+.label-cadastro{
     display:flex;
     flex-direction:column;
     margin-left: 300px;
     padding: 20px;
 }
+.preencher-produtos:focus{
+    outline: 2px solid #7f5af0;
+  }
 .direcao-preencherProdutos{
     margin-left: 600px;  
     margin-top:-350px;
 }
-
+.esconder{
+display: none;
+}
 .botoesProduto{
     padding-top: 400px;
     margin-left: 20%;
@@ -336,6 +344,8 @@ span {
     background-color: #94a1b2; 
     transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
 }
+
+
 /*↓↓↓notasFiscais.html↓↓↓*/
 .Espacamento{
     margin-right: 250px;
