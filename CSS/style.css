@@ -378,6 +378,67 @@ display: none;
     transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
 }
 
+  .imagemConfig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    min-width: 800px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-bottom: -240px;
+  }
+  .drag-area{
+    border: 2px dashed #7f5af0;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .drag-area .tamanho{
+    width: 100px;
+    height: 100px;
+  }
+  .drag-area.active{
+    border: 3px solid #7f5af0;
+  }
+  .drag-area .icon{
+    font-size: 100px;
+    color: #94a1b2;
+  }
+  .drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #94a1b2;
+  }
+  .drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #94a1b2;
+    margin: 10px 0 15px 0;
+  }
+  .drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #1C1C20;
+    color: #94a1b2;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+
 
 /*↓↓↓notasFiscais.html↓↓↓*/
 .Espacamento{

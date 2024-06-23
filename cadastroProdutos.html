@@ -69,8 +69,9 @@
         </li>
     </ul>   
 </nav>
-   <div class="conteudoPrincipal">
-    <form id="informaçõesGerais">
+   <form >
+    <div class="conteudoPrincipal">
+    <div  id="informaçõesGerais">
         <div >
             <label class="label-cadastro" for="NomeProduto">Nome do Produto</label>
             <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Camisa Vermelha" required>
@@ -89,8 +90,8 @@
             <label class="label-cadastro" for="NomeProduto">Categoria de Produto</label>
             <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Roupa" required>
         </div>
-    </form>
-    <form id="valores" class="esconder">
+    </div >
+    <div  id="valores" class="esconder">
         <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Valor de Custo</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="ValorCusto" placeholder="0.00" required>
@@ -99,8 +100,8 @@
             <label class="label-cadastro" for="NomeProduto" >Valor de Venda</label>
             <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="lucro" placeholder="0.00" required>
         </div>
-    </form>
-    <form id="Estoque" class="esconder">
+    </div >
+    <div  id="Estoque" class="esconder">
         <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Estoque Disponível</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueDisponível" placeholder="Ex:5" required>
@@ -109,14 +110,17 @@
             <label class="label-cadastro" for="NomeProduto" >Estoque Máximo</label>
             <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="EstoqueMáximo" placeholder="Ex:100" required>
         </div>
-    </form>
-    <form id="Fotos" class="esconder">
-        <div>
-            <label class="label-cadastro" for="NomeProduto">Imagens placeholder</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Imagens" placeholder="Ex:5" required>
-        </div>
-    </form>
-    <form id="PesoDimencoes" class="esconder">
+    </div >
+    <div  id="Fotos" class="esconder">
+        <div class="drag-area imagemConfig" >
+            <div class="icon" ><img class="tamanho" src="svg/nft.png" alt=""><i class="fas fa-cloud-upload-alt"></i></div>
+            <header>Arraste e solte a imagem aqui para fazer upload</header>
+            <span>OU</span>
+            <button>Selecione o Arquivo</button>
+            <input type="file" hidden>
+          </div>
+    </div >
+    <div  id="PesoDimencoes" class="esconder">
         <div >
             <label class="label-cadastro" for="NomeProduto">Peso Líquido</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="Peso Líquido" placeholder="Kg" required>
@@ -135,25 +139,23 @@
             <label class="label-cadastro" for="NomeProduto">Largura</label>
             <input type="number" class="preencher-produtos" id="NomeProduto" name="Largura" placeholder="Cm" required>
         </div>
-    </form>
-    <form id="DadosFiscais" class="esconder reduzirDistancia">
+    </div>
+    <div id="DadosFiscais" class="esconder reduzirDistancia">
         <div>   
             <label class="label-cadastro" for="NomeProduto">NCM</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="NCM" placeholder="Ex:5" required>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="NCM" maxlength="8" placeholder="O NCM é composto por oito dígitos" required>
             <label class="label-cadastro" for="NomeProduto">CEST</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="CEST" placeholder="Ex:5" required>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="CEST" maxlength="7" placeholder="O CEST é composto por sete dígitos" required>
         </div>
-    </form>
     </div>
-    
+    </div>
     <div class= "botoesProduto" >
         <div>  
-        <a  class="btnCprodutos btnCProdutos1" href="Produtos.html">Salvar </a>
-        <a  class="btnCprodutos btnCProdutos2" href="#">Cancelar
-        </a>
+        <button class="btnCprodutos btnCProdutos1" type="submit">Salvar </button>
+        <a class="btnCprodutos btnCProdutos2" href="#">Cancelar</a>
         </div> 
     </div>
-
+</form>
 <script src="JAVASCRIPT/cadastroProdutos.js"></script>
 </body>
 </html>
