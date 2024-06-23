@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleDisplay('Form6', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['DadosFiscais']);
 });
 
-//codigo responsavel pela funcionalidade de imagens em cadastroProdutos.html
+
+//codigo responsavel pela funcionalidade do form imagens em cadastroProdutos.html
 const dropArea = document.querySelector(".drag-area"),
 dragText = dropArea.querySelector("header"),
 button = dropArea.querySelector("button"),
@@ -64,9 +65,9 @@ function showFile(){
   let fileType = file.type; //pegando o tipo de arquivo selecionado
   let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //um array com os formatos de imagem validos
   if(validExtensions.includes(fileType)){ //se o arquivo do usuário é uma imagem
-    let fileReader = new FileReader(); //creating new FileReader object
+    let fileReader = new FileReader(); 
     fileReader.onload = ()=>{
-      let fileURL = fileReader.result; //passing user file source in fileURL variable
+      let fileURL = fileReader.result; 
       let imgTag = `<img src="${fileURL}" alt="">`; //criando uma img tag e passando a source da imagem para um src attribute
       dropArea.innerHTML = imgTag; //adicionando a img tag criada dentro de dropArea container
     }
