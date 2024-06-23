@@ -39,11 +39,18 @@
 <body>
     <div class="botoesIndex" class="btn">
         <div class="cadastroDeVenda">
-            <p>Digite o valor total vendido:</p>
+            <p>Digite o valor vendido hoje:</p>
             <input type="text" id="valorVenda">
         </div>
         <button class="btn-custom" onclick="lancarVenda()">Lançar nova venda</button>
         <button class="btn-custom">Editar Meta</button>
+        
+        <div>
+            <p>Digite o índice do pedido a ser excluído:</p>
+            <input type="text" id="indiceExclusao">
+            <button class="btn-custom" onclick="excluirVenda()">Excluir venda</button>
+        </div>
+   
     </div> 
 
     <div class="info-vendas">
