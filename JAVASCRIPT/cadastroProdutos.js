@@ -78,3 +78,10 @@ function showFile(){
     dragText.textContent = "Solte a imagem Para enviar arquivo";
   }
 }
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('mostrarMais').addEventListener('click', function(event) {
+      event.preventDefault();
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.classList.toggle('esconder');
+  });
+});
