@@ -1,51 +1,20 @@
+document.addEventListener('DOMContentLoaded', function() {
+  function toggleDisplay(clickElementId, elementsToHide, elementsToShow) {
 
-document.getElementById('Form1').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'block';
-    document.getElementById('valores').style.display = 'none';
-    document.getElementById('Estoque').style.display = 'none';
-    document.getElementById('Fotos').style.display = 'none';
-    document.getElementById('PesoDimencoes').style.display = 'none';
-    document.getElementById('DadosFiscais').style.display = 'none';
-  })
-  document.getElementById('Form2').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'none';
-    document.getElementById('valores').style.display = 'block';
-    document.getElementById('Estoque').style.display = 'none';
-    document.getElementById('Fotos').style.display = 'none';
-    document.getElementById('PesoDimencoes').style.display = 'none';
-    document.getElementById('DadosFiscais').style.display = 'none';
-  })  
-  document.getElementById('Form3').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'none';
-    document.getElementById('valores').style.display = 'none';
-    document.getElementById('Estoque').style.display = 'block';
-    document.getElementById('Fotos').style.display = 'none';
-    document.getElementById('PesoDimencoes').style.display = 'none';
-    document.getElementById('DadosFiscais').style.display = 'none';
-  })
-  document.getElementById('Form4').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'none';
-    document.getElementById('valores').style.display = 'none';
-    document.getElementById('Estoque').style.display = 'none';
-    document.getElementById('Fotos').style.display = 'block';
-    document.getElementById('PesoDimencoes').style.display = 'none';
-    document.getElementById('DadosFiscais').style.display = 'none';
-  })
-  document.getElementById('Form5').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'none';
-    document.getElementById('valores').style.display = 'none';
-    document.getElementById('Estoque').style.display = 'none';
-    document.getElementById('Fotos').style.display = 'none';
-    document.getElementById('PesoDimencoes').style.display = 'block';
-    document.getElementById('DadosFiscais').style.display = 'none';
-  })
-  document.getElementById('Form6').addEventListener('click', () => {
-    document.getElementById('informaçõesGerais').style.display = 'none';
-    document.getElementById('valores').style.display = 'none';
-    document.getElementById('Estoque').style.display = 'none';
-    document.getElementById('Fotos').style.display = 'none';
-    document.getElementById('PesoDimencoes').style.display = 'none';
-    document.getElementById('DadosFiscais').style.display = 'block';
-})
-  
-  
+      document.getElementById(clickElementId).addEventListener('click', function(event) {
+          event.preventDefault(); 
+          elementsToHide.forEach(elementId => {
+              document.getElementById(elementId).classList.add('esconder');
+          });
+          elementsToShow.forEach(elementId => {
+              document.getElementById(elementId).classList.remove('esconder');
+          });
+      });
+  }
+  toggleDisplay('Form1', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['informaçõesGerais']);
+  toggleDisplay('Form2', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['valores']);
+  toggleDisplay('Form3', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['Estoque']);
+  toggleDisplay('Form4', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['Fotos']);
+  toggleDisplay('Form5', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['PesoDimencoes']);
+  toggleDisplay('Form6', ['informaçõesGerais', 'valores', 'Estoque', 'Fotos', 'PesoDimencoes', 'DadosFiscais'], ['DadosFiscais']);
+});
