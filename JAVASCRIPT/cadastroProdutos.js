@@ -39,20 +39,19 @@ input.addEventListener("change", function(){
 });
 
 
-//arquivo Drag File Over DropArea
+
 dropArea.addEventListener("dragover", (event)=>{
   event.preventDefault(); 
   dropArea.classList.add("active");
   dragText.textContent = "Solte a imagem Para enviar arquivo";
 });
 
-//arquivo leave dragged File from DropArea
+
 dropArea.addEventListener("dragleave", ()=>{
   dropArea.classList.remove("active");
   dragText.textContent = "Arraste & solte a imagem aqui para fazer upload";
 });
 
-//If user drop File on DropArea
 dropArea.addEventListener("drop", (event)=>{
   event.preventDefault(); 
   
@@ -62,13 +61,13 @@ dropArea.addEventListener("drop", (event)=>{
 
 function showFile(){
   let fileType = file.type; 
-  let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //um array com os formatos de imagem validos
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; 
   if(validExtensions.includes(fileType)){ 
     let fileReader = new FileReader(); 
     fileReader.onload = ()=>{
       let fileURL = fileReader.result; 
-      let imgTag = `<img src="${fileURL}" alt="">`; //criando uma img tag e passando a source da imagem para um src attribute
-      dropArea.innerHTML = imgTag; //adicionando a img tag criada dentro de dropArea container
+      let imgTag = `<img src="${fileURL}" alt="">`; 
+      dropArea.innerHTML = imgTag; 
     }
     fileReader.readAsDataURL(file);
   }else{
@@ -77,10 +76,21 @@ function showFile(){
     dragText.textContent = "Solte a imagem Para enviar arquivo";
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('mostrarMais').addEventListener('click', function(event) {
-      event.preventDefault();
-      var dropdownMenu = document.getElementById('dropdownMenu');
-      dropdownMenu.classList.toggle('esconder');
-  });
-});
+
+//codigo responsavel pela funcionalidade do dropdown menu em Produtos.html
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
