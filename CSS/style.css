@@ -420,6 +420,9 @@ span {
 .esconder{
 display: none;
 }
+.show{
+    display: block;    
+}
 .dropdown-Menu {
     display: block;
     position: absolute;
