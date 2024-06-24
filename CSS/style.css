@@ -240,7 +240,10 @@ span {
     padding-left: 250px;
     margin-top: 35px;
 }
-
+.equalizador{
+    margin-top: -0.1%;
+    padding-top: 3px;
+}
 .navegacaoProdutosMain a{
     color:#fefefe;
     text-decoration: none;
