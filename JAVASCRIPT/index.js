@@ -1,13 +1,13 @@
-let vendas =[];
+let vendas = [];
 
 function lancarVenda() {
-    // Obter o valor do input
+
     const valorVenda = document.getElementById('valorVenda').value;
 
-    // Converter para número
+
     const valorVendaNum = Number(valorVenda);
 
-    // Verificar se é um número válido
+
     if (isNaN(valorVendaNum) || valorVendaNum <= 0) {
         document.getElementById('resultadoNegativo').textContent = "Por favor, digite um valor de venda válido.";
     } else {
